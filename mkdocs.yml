@@ -1,0 +1,35 @@
+site_name: ishaque_portfolio
+site_description: A collection of my projects
+
+nav:
+ - Home: index.md
+ - Projects: projects.md
+ - Skills: skills.md
+ - Resume: resume.md
+ - About: about.md
+ 
+
+#different themes are available: https://squidfunk.github.io/mkdocs-material/config/theme/
+#theme: readthedocs
+theme: material
+# theme:
+#  name: material
+
+#  palette:
+#     scheme: default
+#     toggle:
+#     icon: material/toggle-switch
+#     name: Switch to dark mode
+#     name: Switch to light mode
+
+
+theme:
+ name: material
+ language: english
+ features:
+  - navigation.instant
+  - navigation.tabs
+  - navigation.sections
+  - navigation.top
+  - toc.integrate
+  - search.suggest
