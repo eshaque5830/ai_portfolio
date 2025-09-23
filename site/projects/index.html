@@ -76,9 +76,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="ishaque_portfolio" class="md-header__button md-logo" aria-label="ishaque_portfolio" data-md-component="logo">
       
@@ -137,6 +135,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -162,6 +162,112 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../skills/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Skills
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../resume/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Resume
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -175,8 +281,12 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="ishaque_portfolio" class="md-nav__button md-logo" aria-label="ishaque_portfolio" data-md-component="logo">
       
@@ -227,6 +337,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Projects
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -238,6 +361,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#heart-disease-prediction-using-ml-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heart Disease Prediction Using ML Techniques
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rice-disease-classification-using-convolutional-neural-networks-cnn-with-tensorflow-tf" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rice Disease Classification using Convolutional Neural Networks (CNN) with TensorFlow (TF)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pia-passenger-sentiment-analysis-using-vader" class="md-nav__link">
+    <span class="md-ellipsis">
+      PIA Passenger Sentiment Analysis using VADER
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#predicting-bank-customer-churn-using-extreme-gradient-boosting-classifier-xgb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predicting Bank Customer Churn using Extreme Gradient Boosting Classifier (XGB)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -316,24 +494,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -344,18 +504,45 @@
 
 
 <h1 id="these-are-my-projects">These are my Projects</h1>
-<h1 id="project-1">Project 1</h1>
+<h2 id="heart-disease-prediction-using-ml-techniques">Heart Disease Prediction Using ML Techniques</h2>
 <blockquote>
-<p>Description:
-This is a project description</p>
+<p><strong>Description:</strong><br />
+Applied multiple classifiers, with XGBoost achieving the highest accuracy of 66% using the UCI dataset of 14 key attributes.<br />
+Explored feature importance to identify the most influential factors contributing to heart disease.<br />
+Performed data preprocessing, including handling missing values and normalization, to improve model performance.<br />
+Visualized results using confusion matrices and ROC curves for model evaluation.  </p>
 </blockquote>
-<p>[Project_1] (./projects/project_!1.md)</p>
-<h1 id="project-2">Project 2</h1>
+<!-- > [Link](https://www.kaggle.com/code/ishaquealidad/heart-disease-prediction-uci-ipynb) -->
 <blockquote>
-<p>Description:
-This is a project description</p>
+<p><a href="https://www.kaggle.com/code/ishaquealidad/rice-disease-prediction" target="_blank">Link</a></p>
 </blockquote>
-<p>[Project_2] (./projects/project_2.md)</p>
+<h2 id="rice-disease-classification-using-convolutional-neural-networks-cnn-with-tensorflow-tf">Rice Disease Classification using Convolutional Neural Networks (CNN) with TensorFlow (TF)</h2>
+<blockquote>
+<p><strong>Description:</strong><br />
+Enhanced model accuracy to 83% through data augmentation and hyperparameter tuning.<br />
+Built a custom CNN architecture tailored for rice leaf disease image classification.<br />
+Implemented early stopping and dropout layers to prevent overfitting.<br />
+Evaluated model performance on a separate test set and visualized predictions.<br />
+<a href="https://www.kaggle.com/code/ishaquealidad/rice-disease-prediction" target="_blank">Link</a></p>
+</blockquote>
+<h2 id="pia-passenger-sentiment-analysis-using-vader">PIA Passenger Sentiment Analysis using VADER</h2>
+<blockquote>
+<p><strong>Description:</strong><br />
+Used the Valence Aware Dictionary and Sentiment Reasoner (VADER) tool to analyze reviews: 15.3% positive, 11.0% negative, and 73.6% neutral.<br />
+Collected and preprocessed passenger feedback data from multiple sources.<br />
+Generated visual summaries such as pie charts and word clouds to present sentiment distribution.<br />
+Provided actionable insights to improve customer experience based on sentiment trends.<br />
+<a href="https://www.kaggle.com/code/ishaquealidad/sentiment-analysis-vader-ipynb" target="_blank">Link</a></p>
+</blockquote>
+<h2 id="predicting-bank-customer-churn-using-extreme-gradient-boosting-classifier-xgb">Predicting Bank Customer Churn using Extreme Gradient Boosting Classifier (XGB)</h2>
+<blockquote>
+<p><strong>Description:</strong><br />
+Used Extreme Gradient Boosting Classifier and achieved an accuracy score of 86.78%.<br />
+Conducted exploratory data analysis to uncover patterns related to customer churn.<br />
+Engineered new features to enhance predictive power and model interpretability.<br />
+Deployed the model as a web application for real-time churn prediction and reporting.<br />
+<a href="https://www.kaggle.com/code/ishaquealidad/bank-churn-xgb-classifier-ipynb" target="_blank">Link</a></p>
+</blockquote>
 
 
 
@@ -375,6 +562,12 @@ This is a project description</p>
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -404,7 +597,7 @@ This is a project description</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "search.suggest"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
