@@ -25,7 +25,7 @@ theme: material
 
 theme:
  name: material
- language: english
+ language: en
  features:
   - navigation.instant
   - navigation.tabs
